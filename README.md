@@ -10,11 +10,19 @@
 - **EDR/AV Evasion**: Bypasses common detection mechanisms, facilitating undetected execution of security research tools and payloads.
 
 ## Usage
-Run dll_unhook from the command line, specifying the target DLL or process as an argument:
+The function module::unhook_ntdll() is used to load a freshy copy of NTDLL.DLL, but you can also use module::unhook_system_dll in order to select a different one.
 
-```shell
-cargo run --release -- <TARGET_PROCESS_OR_DLL>
+```rust
+use unhook;
+fn main() {
+    if (massayo::module::unhook_ntdll()) {
+        // Success
+    } else {
+        // Ooops! :(
+    }
+}
 ```
+
 
 ## Prerequisites
 

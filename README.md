@@ -1,7 +1,8 @@
 # dll_unhook
 
-
 `dll_unhook` is a Rust-based tool designed for bypassing EDR and AV hooks within Windows systems. Utilizing advanced in-memory disassembly techniques, this project aims to identify and revert modifications made to DLLs by EDR/AV software, enabling researchers to execute original, unaltered code.
+
+![image](https://github.com/rat-c/dll_unhook/assets/89196953/0e8817aa-62f0-45e3-883e-7160fc93cd6e)
 
 ## Features
 

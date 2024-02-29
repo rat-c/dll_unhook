@@ -15,7 +15,7 @@ The function module::unhook_ntdll() is used to load a freshy copy of NTDLL.DLL, 
 ```rust
 use unhook;
 fn main() {
-    if (massayo::module::unhook_ntdll()) {
+    if (unhook::module::unhook_ntdll()) {
         // Success
     } else {
         // Ooops! :(
